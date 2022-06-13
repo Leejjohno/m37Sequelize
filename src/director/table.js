@@ -7,11 +7,8 @@ const Director = sequelize.define("Director", {
         notNull: true
     },
     directorID: {
-        type: DataTypes.INTEGER,
-        autoIncrement: true,
-        primaryKey: true
-    },
-    
+        type: DataTypes.INTEGER
+    }
 });
 
 module.exports = Director

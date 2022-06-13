@@ -9,7 +9,7 @@ const Tv = require("./Tv/table");
 
 const app = async (yargsObj) => {
     try {
-        await sequelize.sync();
+        await sequelize.sync({alter: true});
         Movie.hasOne(Director, {
             foreignKey: "directorID"
         })
